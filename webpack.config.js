@@ -2,11 +2,10 @@ const webpack = require('webpack');
 module.exports = {
   mode: 'development',
   entry: {
-    vendor: ['@babel/polyfill', 'eventsource-polyfill', 'react', 'react-dom'],
-    app: ['@babel/polyfill', 'eventsource-polyfill', './client.js'],
+    vendor: ['@babel/polyfill', 'eventsource-polyfill'],
+    app: ['@babel/polyfill', 'eventsource-polyfill'],
   },
   output: {
-    path: '/dist',
     filename: '[name].js',
     publicPath: '/',
   },

@@ -10,12 +10,13 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-stage-0": "^7.0.0",
     "babel-loader": "^8.0.5",
+    "event-source-polyfill": "^1.0.5",
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1"
   },
   "scripts": {
-    "test": "lego start",
-    "build": "webpack --mode development"
+    "dev": "webpack --mode development --module-bind js=babel-loader",
+    "build": "webpack --mode production --module-bind js=babel-loader"
   },
   "repository": {
     "type": "git",
